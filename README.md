@@ -2,7 +2,7 @@
 Sudoku Solver is a Django project which solves the sudoku board provided by the user using a python backtracking algorithm
 
 # Steps to try this out :-
-1 - Make sure you have Python3 installed on your loacl machine. <br>
+1 - Make sure you have python3 and django installed on your local machine. <br>
 2 - Clone this git repo on your loacl machine. <br>
 3 - Open the Sudoku_UI directory. <br>
 4 - Open terminal in the current directory. <br>
