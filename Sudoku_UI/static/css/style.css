@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: aqua;
+}
+
+header{
+    text-align: center;
+    margin: 5vh;
+}
+
+.container{
+    display: flex;
+    height: 84vh;
+    width: 100%;
+    background-color: yellow;
+    flex-direction: row;
+    flex-wrap:wrap-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn{
+    height: 7vh;
+    width: 10vw;
+    font-size: 3vh;
+    color: black;
+    border: 2px solid black;
+    background-color: red;
+    border-radius: 10px;
+    box-shadow: 2px 2px orange;
+}
+
+
+.sudoku{
+    display: inline-grid;
+    grid-template-columns: 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh;
+    grid-template-rows: 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh;
+    border: 4px solid red;
+    border-radius: 5px;
+}
+
+
+.boxes{
+    text-align: center;
+    font-size: 3vh;
+    border: 0.1px solid greenyellow;
+    border-radius: 2px;
+}
+
+#box3,#box12,#box21,#box30,#box39,#box48,#box57,#box66,#box75,#box6,#box15,#box24,#box33,#box42,#box51,#box60,#box69,#box78{
+    border-right: 3px solid red;
+}
+
+#box19,#box20,#box21,#box22,#box23,#box24,#box25,#box26,#box27,#box46,#box47,#box48,#box49,#box50,#box51,#box52,#box53,#box54{
+    border-bottom: 3px solid red;
+}

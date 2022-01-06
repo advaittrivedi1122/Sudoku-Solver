@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: aqua;
+}
+
+header{
+    text-align: center;
+    margin: 5vh;
+}
+
+.container{
+    display: flex;
+    height: 84vh;
+    width: 100vw;
+    background-color: yellow;
+    flex-direction: row;
+    flex-wrap:wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn{
+    height: 7vh;
+    width: 10vw;
+    font-size: 3vh;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px orange;
+}
+
+
+.sudoku{
+    display: inline-grid;
+    grid-template-columns: 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh;
+    grid-template-rows: 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh;
+    border: 4px solid red;
+    border-radius: 5px;
+}
+
+
+.boxes{
+    background-color: white;
+    line-height: 5vw;
+    text-align: center;
+    font-size: 3vw;
+    border: 0.1px solid greenyellow;
+    border-radius: 2px;
+}
