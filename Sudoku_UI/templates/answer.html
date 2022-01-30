@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="{% static 'css/try.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Sudoku Solver</h1>
+    </header>
+<main>
+    <form method="POST">
+        {% csrf_token %}
+    <div class="container">
+            <div class="sudoku">
+                {% for i in data %}
+                <div class="boxes">
+                    {{i}}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </form>
+</main>
+</body>
+</html>

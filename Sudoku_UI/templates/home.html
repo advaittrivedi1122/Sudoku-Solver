@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/main.js' %}"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Sudoku Solver</h1>
+    </header>
+    <main>
+        <form action="output" method="post" name="sudoku">
+        <div class="container">
+            <div class="sudoku">
+                    <input type="text" class="boxes" id="box1" value="0" name="box1">
+                    <input type="text" class="boxes" id="box2" value="0" name="box2">
+                <input type="text" class="boxes" id="box3" value="0" name="box3">
+                <input type="text" class="boxes" id="box4" value="0" name="box4">
+                <input type="text" class="boxes" id="box5" value="0" name="box5">
+                <input type="text" class="boxes" id="box6" value="0" name="box6">
+                <input type="text" class="boxes" id="box7" value="0" name="box7">
+                <input type="text" class="boxes" id="box8" value="0" name="box8">
+                <input type="text" class="boxes" id="box9" value="0" name="box9">
+                <input type="text" class="boxes" id="box10" value="0" name="box10">
+                <input type="text" class="boxes" id="box11" value="0" name="box11">
+                <input type="text" class="boxes" id="box12" value="0" name="box12">
+                <input type="text" class="boxes" id="box13" value="0" name="box13">
+                <input type="text" class="boxes" id="box14" value="0" name="box14">
+                <input type="text" class="boxes" id="box15" value="0" name="box15">
+                <input type="text" class="boxes" id="box16" value="0" name="box16">
+                <input type="text" class="boxes" id="box17" value="0" name="box17">
+                <input type="text" class="boxes" id="box18" value="0" name="box18">
+                <input type="text" class="boxes" id="box19" value="0" name="box19">
+                <input type="text" class="boxes" id="box20" value="0" name="box20">
+                <input type="text" class="boxes" id="box21" value="0" name="box21">
+                <input type="text" class="boxes" id="box22" value="0" name="box22">
+                <input type="text" class="boxes" id="box23" value="0" name="box23">
+                <input type="text" class="boxes" id="box24" value="0" name="box24">
+                <input type="text" class="boxes" id="box25" value="0" name="box25">
+                <input type="text" class="boxes" id="box26" value="0" name="box26">
+                <input type="text" class="boxes" id="box27" value="0" name="box27">
+                <input type="text" class="boxes" id="box28" value="0" name="box28">
+                <input type="text" class="boxes" id="box29" value="0" name="box29">
+                <input type="text" class="boxes" id="box30" value="0" name="box30">
+                <input type="text" class="boxes" id="box31" value="0" name="box31">
+                <input type="text" class="boxes" id="box32" value="0" name="box32">
+                <input type="text" class="boxes" id="box33" value="0" name="box33">
+                <input type="text" class="boxes" id="box34" value="0" name="box34">
+                <input type="text" class="boxes" id="box35" value="0" name="box35">
+                <input type="text" class="boxes" id="box36" value="0" name="box36">
+                <input type="text" class="boxes" id="box37" value="0" name="box37">
+                <input type="text" class="boxes" id="box38" value="0" name="box38">
+                <input type="text" class="boxes" id="box39" value="0" name="box39">
+                <input type="text" class="boxes" id="box40" value="0" name="box40">
+                <input type="text" class="boxes" id="box41" value="0" name="box41">
+                <input type="text" class="boxes" id="box42" value="0" name="box42">
+                <input type="text" class="boxes" id="box43" value="0" name="box43">
+                <input type="text" class="boxes" id="box44" value="0" name="box44">
+                <input type="text" class="boxes" id="box45" value="0" name="box45">
+                <input type="text" class="boxes" id="box46" value="0" name="box46">
+                <input type="text" class="boxes" id="box47" value="0" name="box47">
+                <input type="text" class="boxes" id="box48" value="0" name="box48">
+                <input type="text" class="boxes" id="box49" value="0" name="box49">
+                <input type="text" class="boxes" id="box50" value="0" name="box50">
+                <input type="text" class="boxes" id="box51" value="0" name="box51">
+                <input type="text" class="boxes" id="box52" value="0" name="box52">
+                <input type="text" class="boxes" id="box53" value="0" name="box53">
+                <input type="text" class="boxes" id="box54" value="0" name="box54">
+                <input type="text" class="boxes" id="box55" value="0" name="box55">
+                <input type="text" class="boxes" id="box56" value="0" name="box56">
+                <input type="text" class="boxes" id="box57" value="0" name="box57">
+                <input type="text" class="boxes" id="box58" value="0" name="box58">
+                <input type="text" class="boxes" id="box59" value="0" name="box59">
+                <input type="text" class="boxes" id="box60" value="0" name="box60">
+                <input type="text" class="boxes" id="box61" value="0" name="box61">
+                <input type="text" class="boxes" id="box62" value="0" name="box62">
+                <input type="text" class="boxes" id="box63" value="0" name="box63">
+                <input type="text" class="boxes" id="box64" value="0" name="box64">
+                <input type="text" class="boxes" id="box65" value="0" name="box65">
+                <input type="text" class="boxes" id="box66" value="0" name="box66">
+                <input type="text" class="boxes" id="box67" value="0" name="box67">
+                <input type="text" class="boxes" id="box68" value="0" name="box68">
+                <input type="text" class="boxes" id="box69" value="0" name="box69">
+                <input type="text" class="boxes" id="box70" value="0" name="box70">
+                <input type="text" class="boxes" id="box71" value="0" name="box71">
+                <input type="text" class="boxes" id="box72" value="0" name="box72">
+                <input type="text" class="boxes" id="box73" value="0" name="box73">
+                <input type="text" class="boxes" id="box74" value="0" name="box74">
+                <input type="text" class="boxes" id="box75" value="0" name="box75">
+                <input type="text" class="boxes" id="box76" value="0" name="box76">
+                <input type="text" class="boxes" id="box77" value="0" name="box77">
+                <input type="text" class="boxes" id="box78" value="0" name="box78">
+                <input type="text" class="boxes" id="box79" value="0" name="box79">
+                <input type="text" class="boxes" id="box80" value="0" name="box80">
+                <input type="text" class="boxes" id="box81" value="0" name="box81">
+            </div>
+            <div class="execute-btn">
+                <input type="submit" class="btn" value="SOLVE" onclick="process()">
+            </div>
+        </div>
+    </form>
+    </main>
+</body>
+</html>
